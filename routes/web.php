@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/{vue_capture?}', function() {
-   return view('welcome');
-})->where('vue_capture', '[\/\w\.-]*');
+// Route::get('/{vue_capture?}', function() {
+//    return view('welcome');
+// })->where('vue_capture', '[\/\w\.-]*');
 
 // Route::resource('students', 'StudentController', [
 //     'except' => 'index'
