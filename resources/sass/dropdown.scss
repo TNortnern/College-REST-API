@@ -1,0 +1,39 @@
+@import './app.scss';
+
+.dropdown-shell {
+    display: inline-block;
+    .nav-dropdown-main-btn {
+        display: block;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid white;
+        color: white;
+        &:hover {
+            background: white;
+            color: black;
+        }
+    }
+    .dropdown-buttons {
+        display: block;
+        position: absolute;
+        .nav-dropdown-sub-btn {
+            display: block;
+            padding: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: 1px solid white;
+            color: white;
+            background: rgba(173, 216, 230, 0.8);
+            &:hover {
+                background: white;
+                text-decoration: underline;
+                color: black;
+            }
+            &:active {
+                background: rgba(153, 196, 220, 1);
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@import './app.scss';
+
+.console {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F8F8F8;
+    .console-background {
+        width: 100%;
+        min-height: 100vh;
+        opacity: 0.5;
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/University_of_Ottawa%2C_Coat_of_Arms.png/595px-University_of_Ottawa%2C_Coat_of_Arms.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 200px;
+    }
+}

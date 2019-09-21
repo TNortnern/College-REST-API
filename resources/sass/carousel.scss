@@ -1,0 +1,22 @@
+@import './app.scss';
+
+
+.carousel-item {
+    img {
+        width: 100vw;
+        height: 600px;
+        object-fit: cover;
+    }
+}
+.carousel-item-text-box {
+    position: absolute;
+    width: 45%;
+    background: rgba(0,0,0,0.6);
+    left: 50%;
+    top: 70%;
+    padding: 20px;
+    p {
+        color: white;
+        margin: 0px;
+    }
+} 

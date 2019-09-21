@@ -1,0 +1,5 @@
+@mixin vertAndHortCentered($display) {
+    display: $display;
+    justify-content: center;
+    align-items: center;
+}

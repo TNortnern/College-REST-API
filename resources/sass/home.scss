@@ -1,0 +1,229 @@
+@import './app.scss';
+
+.landing-page-shell {
+    background: #F8F8F8;
+    width: 100%;
+    height: 200vh;
+    .title-and-search-modal {
+        padding-left: 10%;
+        padding-top: 30vh;
+        .landing-page-title {
+            font-family: arial;
+            width: 320px;
+            font-size: 30px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+        .landing-page-search-bar {
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 400px;
+            &::placeholder {
+                color: lightgray;
+                font-family: arial;
+                font-weight: 100;
+            }
+        }
+        .landing-page-navigation {
+            border-left: 10px solid rgba(173, 216, 230, 0.4);
+            p {
+                display: table;
+                padding: 10px;
+                margin-bottom: 10px;
+                font-family: arial;
+                font-size: 12px;
+                font-weight: 200;
+                opacity: 0.5;
+                background-color:  rgba(173, 216, 230, 0);
+                transition: background-color 1s;
+                &:hover {
+                    background-color:  rgba(173, 216, 230, 0.8);
+                }
+            }
+        }
+    }
+    .left-info-block-and-image-container {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .info-block {
+            display: inline-block;
+            width: 50%;
+            padding: 10px;
+            padding-left: 30px;
+            background: white;
+            border-bottom: 3px solid lightgrey;
+            box-shadow: 0px 0px 10px 1px lightgrey;
+            td {
+                width: 50%;
+                padding: 20px;
+                img {
+                    width: 100%;
+                }
+            }
+            .highlighted-title {
+                display: inline-block;
+                background: lightblue;
+                color: white;
+                padding: 10px;
+                padding-left: 50px;
+                padding-right: 20px;
+                font-weight: 800;
+            }
+            .paragraph-header {
+                font-weight: bold;
+                font-size: 20px;
+                display: inline-block;
+                border-bottom: 5px solid lightblue;
+            }
+        }
+        .right-image {
+            display: inline-block;
+            float: right;
+            width: calc(49% - 100px);
+            margin: 50px;
+            border-bottom: 3px solid lightgray;
+            box-shadow: 0px 0px 10px 1px lightgrey;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .right-info-block-container {
+        width: 100%;
+        margin-top: 100px;
+        .right-info-block {
+            width: 85%;
+            float: right;
+            padding: 30px;
+            padding-left: 50px;
+            padding-bottom: 0px;
+            background: white;
+            border-bottom: 3px solid lightgrey;
+            box-shadow: 0px 0px 10px 1px lightgrey;
+            .right-info-block-title {
+                width: 100%;
+                .title-blue {
+                    color: lightblue;
+                    font-size: 30px;
+                    font-weight: 700;
+                    margin: 0px;
+                }
+                .title-black {
+                    color: black;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+            }
+            .info-cards-container {
+                width: 100%;
+                .info-card {
+                    width: 33%;
+                    display: inline-block;
+                    padding-right: 2%;
+                    .info-card-image {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .card-body {
+                        background: white;
+                        width: 90%;
+                        position: relative;
+                        top: -50px;
+                        .info-card-title {
+                            font-weight: bold;
+                            font-size: 20px;
+                        }
+                        .info-card-read-more-link {
+                            color: lightblue;
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .registration-modal-container {
+        width: 100%;
+        padding: 30px;
+        padding-top: 100px;
+        margin-top: 40px;
+        @include vertAndHortCentered(flex);
+        .registration-modal {
+            background: white;
+            width: 80%;
+            height: 400px;
+            @include vertAndHortCentered(inline-flex);
+            justify-content: flex-end;
+            border-bottom: 3px solid lightgrey;
+            box-shadow: 0px 0px 10px 1px lightgrey;
+            .registration-modal-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                width: 70%;
+                height: 100%;
+                #registration-form {
+                    width: 100%;
+                    table {
+                        width: 100%;
+                        td {
+                            width: 49%;
+                            padding: 10px;
+                            .modal-input {
+                                width: 75%;
+                                margin: 10px;
+                                padding: 10px 10px 3px 2px;
+                                border: none;
+                                border-bottom: 2px solid gray;
+                                transition: border 1s;
+                                &::placeholder {
+                                    color: lightgray;
+                                }
+                                &:focus {
+                                    outline: none;
+                                    border-bottom: 2px solid rgba(173, 216, 230, 1);
+                                }
+                            }
+                        }
+                    }
+                    .button {
+                        color: lightblue;
+                        background-color: white;
+                        border: 1px solid lightblue;
+                        border-radius: 10px;
+                        padding: 0px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        margin: 5px;
+                        margin-left: 20px;
+                        &:hover {
+                            background: lightblue;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .registration-modal-contact-info {
+                width: 29%;
+                height: 100%;
+                background: lightblue;
+                padding: 30px;
+                @include vertAndHortCentered(inline-flex);
+                p {
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
